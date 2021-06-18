@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Multiplicação</title>
+</head>
+<body>
+    <h1>Tabela de Multiplicação</h1>
+    <script>
+        function multiplicationTable(n) {
+
+        let x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   
+        let y = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  
+
+        let table = []
+
+            for (let i = 0; i <= n; i++) 
+            {
+                table[i] = []
+                for (let j = 0; j <= n; j++) 
+                {
+                    table[i][j] = ""
+                }
+
+            }
+
+            for (let L = 0; L <= n; L++){
+                for (let C = 0; C <= n; C++) {
+                    table[L][C] = x[L] * y[C]
+                }
+            }
+        console.table(table)
+        }
+    </script>
+</body>
+</html>
